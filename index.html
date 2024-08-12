@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Forms</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <form id="formulario">
+            <label class="label__nombre">
+                Nombre
+                <input name="nombre" type="text">
+            </label>
+            <label class="label__opciones">
+                <span>De lo aprendido hasta ahora, ¿qué tema te gustó más?</span>
+                <select name="opciones">
+                    <option value="clases">Clases</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="poo">POO</option>
+                </select>
+            </label>
+            <fieldset class="fieldset__estudiar">
+                <legend>Preferís estudiar</legend>
+                <label>
+                    <input name="estudiar" type="radio" value="dia">
+                    De día
+                </label>
+                <label>
+                    <input name="estudiar" type="radio" value="noche">
+                    De noche
+                </label>
+            </fieldset>
+            <fieldset class="fieldset__dificultad">
+                <legend>¿Cuales fueron los temas más complejos hasta ahora?</legend>
+                <label>
+                    <input name="dificultad" value="typescript" type="checkbox">
+                    Typescript
+                </label>
+                <label>
+                    <input name="dificultad" value="promesas" type="checkbox">
+                    Promesas
+                </label>
+                <label>
+                    <input name="dificultad" value="clases" type="checkbox">
+                    Clases
+                </label>
+                <label>
+                    <input name="dificultad" value="funciones" type="checkbox">
+                    Funciones
+                </label>
+            </fieldset>
+            <button type="submit" class="boton__form">Enviar</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
